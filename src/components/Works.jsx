@@ -1,11 +1,12 @@
-import React from "react";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+import React from "react";
+import { SectionWrapper } from "../hoc";
+import Tilt from "react-parallax-tilt";
+import { github } from "../assets";
+import { motion } from "framer-motion";
+import { projects } from "../constants";
+import { styles } from "../styles";
 
 const ProjectCard = ({
   index,
@@ -46,7 +47,7 @@ const ProjectCard = ({
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={`tag-${name}`} className={`text-[14px] ${tag.color}`}>
+            <p key={`tag-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}

@@ -1,10 +1,11 @@
+import { description, services } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
+
 import React from "react";
+import { SectionWrapper } from "../hoc";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { services, description } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
