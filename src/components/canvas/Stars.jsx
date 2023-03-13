@@ -6,7 +6,10 @@ import { Suspense, useRef, useState } from "react";
 
 const Stars = (props) => {
   const ref = useRef();
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+  const [sphere] = useState(() =>
+    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+  );
+
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
@@ -34,6 +37,8 @@ const StarsCanvas = () => {
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
+
+        <Preload all />
       </Canvas>
     </div>
   );

@@ -1,3 +1,4 @@
+import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../constants";
 import React, { useRef, useState } from "react";
 
 import { EarthCanvas } from "./canvas";
@@ -12,8 +13,27 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "Alan",
+        from_email: form.email,
+        to_email: "alanvega002@gmail.com",
+        message: form.message,
+      },
+      PUBLIC_KEY
+    );
+  };
   return (
     <div className="cl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
