@@ -1,4 +1,3 @@
-import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../constants";
 import React, { useRef, useState } from "react";
 
 import { EarthCanvas } from "./canvas";
@@ -21,18 +20,32 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(
-      SERVICE_ID,
-      TEMPLATE_ID,
-      {
-        from_name: form.name,
-        to_name: "Alan",
-        from_email: form.email,
-        to_email: "alanvega002@gmail.com",
-        message: form.message,
-      },
-      PUBLIC_KEY
-    );
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Alan",
+          from_email: form.email,
+          to_email: "alanvega002@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you, I will get back to you as soon as possible!");
+
+          setForm({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Something went wrong, please try again.");
+        }
+      );
   };
   return (
     <div className="cl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -40,8 +53,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-inherit-100 p-8 rounded-2xl"
       >
-        <p>Get in touch</p>
-        <h3> Contact.</h3>
+        <p className={styles.sectionSubText}>Get in touch</p>
+        <h3 className={styles.sectionHeadText}> Contact.</h3>
 
         <form
           ref={formRef}
