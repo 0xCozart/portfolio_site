@@ -1,4 +1,5 @@
 import adventure from "./company/adventure.png";
+import avLogo from "./av_white.svg";
 import backend from "./backend.png";
 import carrent from "./carrent.png";
 import close from "./close.svg";
@@ -34,6 +35,7 @@ import typescript from "./tech/typescript.png";
 import web from "./web.png";
 
 export {
+  avLogo,
   squad,
   adventure,
   skynet,
