@@ -1,3 +1,4 @@
+import adventure from "./company/adventure.png";
 import backend from "./backend.png";
 import carrent from "./carrent.png";
 import close from "./close.svg";
@@ -22,6 +23,8 @@ import postgres from "./tech/postgresql.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import shopify from "./company/shopify.png";
+import skynet from "./company/skynet.png";
+import squad from "./company/squad.png";
 import starbucks from "./company/starbucks.png";
 import tailwind from "./tech/tailwind.png";
 import tesla from "./company/tesla.png";
@@ -31,6 +34,9 @@ import typescript from "./tech/typescript.png";
 import web from "./web.png";
 
 export {
+  squad,
+  adventure,
+  skynet,
   postgres,
   logo,
   backend,
