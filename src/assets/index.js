@@ -1,5 +1,5 @@
 import adventure from "./company/adventure.png";
-import avLogo from "./av_white.svg";
+import avLogo from "./avLogo.svg";
 import backend from "./backend.png";
 import carrent from "./carrent.png";
 import close from "./close.svg";
