@@ -14,7 +14,6 @@ import html from "./tech/html.png";
 import ipfs from "./tech/ipfs.png";
 import javascript from "./tech/javascript.png";
 import jobit from "./jobit.png";
-import logo from "./logo.svg";
 import menu from "./menu.svg";
 import meta from "./company/meta.png";
 import mobile from "./mobile.png";
@@ -34,13 +33,15 @@ import tripguide from "./tripguide.png";
 import typescript from "./tech/typescript.png";
 import web from "./web.png";
 
+// import logo from "./logo.svg";
+
 export {
   avLogo,
   squad,
   adventure,
   skynet,
   postgres,
-  logo,
+  // logo,
   backend,
   creator,
   mobile,

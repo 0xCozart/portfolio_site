@@ -40,6 +40,14 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li
+            key="resume"
+            className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
+          >
+            <a target="_blank" href="https://turquoise-jourdan-86.tiiny.site/">
+              Resume
+            </a>
+          </li>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           {" "}
