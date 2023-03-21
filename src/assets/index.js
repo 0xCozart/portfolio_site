@@ -1,7 +1,6 @@
 import adventure from "./company/adventure.png";
 import avLogo from "./avLogo.svg";
 import backend from "./backend.png";
-import carrent from "./carrent.png";
 import close from "./close.svg";
 import creator from "./creator.png";
 import css from "./tech/css.png";
@@ -13,7 +12,6 @@ import github from "./github.png";
 import html from "./tech/html.png";
 import ipfs from "./tech/ipfs.png";
 import javascript from "./tech/javascript.png";
-import jobit from "./jobit.png";
 import menu from "./menu.svg";
 import meta from "./company/meta.png";
 import mobile from "./mobile.png";
@@ -28,9 +26,11 @@ import squad from "./company/squad.png";
 import starbucks from "./company/starbucks.png";
 import tailwind from "./tech/tailwind.png";
 import tesla from "./company/tesla.png";
+import tgthr from "./tgthr.png";
 import threejs from "./tech/threejs.svg";
-import tripguide from "./tripguide.png";
 import typescript from "./tech/typescript.png";
+import walle from "./walle.jpg";
+import waveMart from "./waveMart.jpg";
 import web from "./web.png";
 
 // import logo from "./logo.svg";
@@ -66,9 +66,9 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
+  waveMart,
   express,
   ipfs,
-  jobit,
-  tripguide,
+  walle,
+  tgthr,
 };
