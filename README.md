@@ -1,7 +1,5 @@
 # Welcome to My Portfolio Repository! 👋
 
-Thank you for visiting my portfolio repository 🙏.
-
 If you're interested in learning more about my work, please visit [my portfolio website](https://alanv.xyz) where you can find additional details on my experience, projects, and skills.
 
 Feel free to reach out to me through the [contact form](https://alanv.xyz/#contact) on my website if you have any questions or if you're interested in working together 🤝.
