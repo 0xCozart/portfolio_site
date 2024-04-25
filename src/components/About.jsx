@@ -1,4 +1,4 @@
-import { description, services } from "../constants/index";
+import { description, services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import React from "react";
