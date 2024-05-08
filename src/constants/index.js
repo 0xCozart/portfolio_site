@@ -38,7 +38,7 @@ export const description =
   "Explore the power of Node.js and TypeScript in my cutting-edge web applications - 3 years of experience delivering scalable, secure, \
   and efficient server-side solutions. Driven by industry trends and a passion for maintainable code, I excel both solo and in a team.";
 
-export const ResumeLink = "https://tan-alfy-8.tiiny.site/";
+export const ResumeLink = "https://tan-alfy-8.tiiny.site";
 
 export const navLinks = [
   {
